@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+    </head>
+<body>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.411);
+        }
+        .jumbotron {
+            display: inline-flex;
+            background-color: rgba(255, 221, 71, 0.24);
+        }
+        .button{
+
+            padding-left: 60%;
+        }
+    </style>
+    <div class="container my-5">
+        <div class="jumbotron d-flex">
+            <div class="message">
+                Bienvenido <%= user.username %> 
+            </div>
+            <div class="button float-right">
+                <a href="/logout" class="btn btn-warning float-right">Desloguearse</a>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
